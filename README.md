@@ -5,3 +5,6 @@ To run the project,
 
 1. run the command : npm start
 2. run the command : nodemon app.js
+
+
+The api will run on http://localhost:3000
