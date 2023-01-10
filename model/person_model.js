@@ -1,5 +1,6 @@
 const mongoose= require('mongoose');
 
+//initialize the schema
 const PersonSchema= mongoose.Schema({
 
     first_name:{
@@ -20,8 +21,10 @@ const PersonSchema= mongoose.Schema({
     },
 },
 {
+    //do not display version key when a new person is created
     collection:'PersonSchema',
     versionKey: false //here
 });
 
+//exporting
 module.exports = mongoose.model("Persons",PersonSchema);
